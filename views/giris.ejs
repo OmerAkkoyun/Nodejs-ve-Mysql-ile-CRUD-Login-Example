@@ -1,0 +1,47 @@
+<body>
+  <div style="height:850px" class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+
+          <% if(locals.message){ %>
+          <div class="alert alert-danger text-center" role="alert">
+            <strong>Oturum Açın !</strong> <%=message.giris%>
+          </div>
+          <% } %>
+
+
+          <div class="card-body">
+            <h5 class="card-title text-center">Admin Giriş</h5>
+            
+
+            <form action="/giris" method="POST" class="form-signin">
+
+              <div style="margin-bottom:12px" class="form-label-group">
+                <input type="text" id="k_adi" class="form-control" name="k_adi" placeholder="Kullanıcı adı" required
+                  autofocus>
+              </div>
+
+              <div style="margin-bottom:12px" class="form-label-group">
+                <input type="password" id="sifre" class="form-control" name="sifre" placeholder="Şifre" required>
+              </div>
+
+              <button style="margin-bottom:12px" class="btn btn-lg btn-success btn-block " type="submit">Giriş
+                Yap</button>
+            </form>
+
+
+            <% if(locals.message && message.yanlisgiris){ %>
+            <div class="alert alert-danger text-center" role="alert">
+               <i class="fa fa-exclamation-triangle" aria-hidden="true"></i><%=message.yanlisgiris%>
+            </div>
+            <% } %>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>

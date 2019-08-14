@@ -1,0 +1,65 @@
+<body>
+  <div style="height:850px" class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Yeni Kayıt Oluştur</h5>
+            <div>
+              <% if(locals.message){ %>
+              <div class="alert alert-success" role="alert">
+                <strong>Kayıt Başarılı !</strong> <%=message.success%>
+              </div>
+              <% } %>
+            </div>
+
+            <form action="/kayit" method="POST" class="form-signin">
+
+              <div style="margin-bottom:12px" class="form-label-group">
+                <input type="text" id="isim" name="isim" class="form-control" placeholder="Adı" required autofocus>
+              </div>
+
+
+              <div style="margin-bottom:12px" class="form-label-group">
+                <input type="text" id="soyisim" name="soyisim" class="form-control" placeholder="Soyadı" required
+                  autofocus>
+              </div>
+
+
+              <div style="margin-bottom:12px" class="form-label-group">
+                <input type="number" id="yas" name="yas" class="form-control" placeholder="Yaş" required autofocus>
+              </div>
+
+
+              <div style="margin-bottom:12px" class="form-label-group">
+                <input type="text" id="meslek" name="meslek" class="form-control" placeholder="Meslek" required
+                  autofocus>
+              </div>
+
+
+              <div style="margin-bottom:12px" class="form-label-group">
+                <input type="text" id="k_adi" name="k_adi" class="form-control" placeholder="Kullanıcı adı" required
+                  autofocus>
+              </div>
+
+
+
+              <div style="margin-bottom:12px" class="form-label-group">
+                <input type="password" id="sifre" name="sifre" class="form-control" placeholder="Şifre" required>
+              </div>
+
+
+              <button style="margin-bottom:12px" class="btn btn-lg btn-warning btn-block "
+                type="submit"><b>Kaydet</b></button>
+              <hr class="my-4">
+
+                <a  href = "/personeller";style="margin-bottom:12px" class="btn btn-lg btn-info btn-block ">
+                <b>Personel Listesini Gör</b></a>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

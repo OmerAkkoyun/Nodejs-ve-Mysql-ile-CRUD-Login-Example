@@ -1,0 +1,45 @@
+<!--Personelleri Listele-->
+
+<div style="height:850px;margin-top:35px;" class="container">
+    <h1 style=text-align:center;margin-bottom:20px;>Personel Tablosu</h1>
+
+    <a href="/kayit"> <button class="btn btn-lg btn-warning"><b>Yeni Personel Ekle </b></button> </a>
+    <% if(locals.message){ %>
+                            <div class="alert alert-success" role="alert">
+                                <strong>Güncelleme Başarılı !</strong> <%=message.guncelleme%>
+                            </div>
+                            <% } %>
+    <table style="background:#afedde;border-radius:15px;margin-top:20px;margin-bottom:100px" class="table">
+
+        <thead>
+            <tr style="color:#ea5600">
+                <th>İsim</th>
+                <th>Soyisim</th>
+                <th>Yaş</th>
+                <th>Meslek</th>
+                <th>İşlem Yap</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <% for(var i=0;i<sonuclar.length;i++){ %>
+            <tr>
+                <td><b><%=sonuclar[i]["isim"]%></b></td>
+                <td><b><%=sonuclar[i]["soyisim"]%></b></td>
+                <td><b><%=sonuclar[i]["yas"]%></b></td>
+                <td><b><%=sonuclar[i]["meslek"]%></b> </td>
+                <!--personeldüzenle kontrollere id göndereceğiz bu id ile personel çekicek-->
+                <!--<td> <a href="/personel/duzen?id=<%=sonuclar[i]["id"]%>"  ><b> <button  class="btn btn-success">Düzenle</button> </a> </b> </td> -->
+                <td> <a href="/personelDuzenle?id=<%=sonuclar[i]["id"]%>"  ><b> <button class="btn btn-sm btn-info btn-active">Düzenle</button> </a> </b> </td>
+            </tr>
+
+            <% }%>
+
+
+
+        </tbody>
+
+    </table>
+
+</div>

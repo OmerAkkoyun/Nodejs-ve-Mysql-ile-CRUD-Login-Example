@@ -1,0 +1,77 @@
+<!--Personelleri Listele-->
+<!-- gelen personel =  <%=sonuclar[0]["isim"]%>  -->
+
+
+
+
+<body>
+    <div style="height:850px" class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card card-signin my-5">
+                    <div class="card-body">
+                        <h5 class="card-title text-center"><b>Personel Güncelle</b></h5>
+                        <div>
+                            
+                        </div>
+
+                        <form action="/personelDuzenle?id=<%=sonuclar[0]["id"]%>" method="POST" class="form-signin">
+
+                            <div style="margin-bottom:12px" class="form-label-group">
+                                <b> İsim </b>
+                                <input type="text" value="<%=sonuclar[0]["isim"]%>" name="isim" class="form-control"
+                                    placeholder="Adı" required autofocus>
+                            </div>
+
+                            <b> Soyisim </b>
+                            <div style="margin-bottom:12px" class="form-label-group">
+                                <input type="text" value="<%=sonuclar[0]["soyisim"]%>" name="soyisim"
+                                    class="form-control" placeholder="Soyadı" required autofocus>
+                            </div>
+
+                            <b> Yaş </b>
+                            <div style="margin-bottom:12px" class="form-label-group">
+                                <input type="number" value="<%=sonuclar[0]["yas"]%>" name="yas" class="form-control"
+                                    placeholder="Yaş" required autofocus>
+                            </div>
+
+                            <b> Meslek </b>
+                            <div style="margin-bottom:12px" class="form-label-group">
+                                <input type="text" value="<%=sonuclar[0]["meslek"]%>" name="meslek" class="form-control"
+                                    placeholder="Meslek" required autofocus>
+                            </div>
+
+                            <b> Kullanıcı Adı </b>
+                            <div style="margin-bottom:12px" class="form-label-group">
+                                <input type="text" value="<%=sonuclar[0]["k_adi"]%>" name="k_adi" class="form-control"
+                                    placeholder="Kullanıcı adı" required autofocus>
+                            </div>
+
+
+                            <b> Şifre </b>
+                            <div style="margin-bottom:12px" class="form-label-group">
+                                <input type="password" value="<%=sonuclar[0]["parola"]%>" name="sifre"
+                                    class="form-control" placeholder="Şifre" required>
+                            </div>
+
+
+                            <button style="margin-bottom:12px" class="btn btn-lg btn-success btn-block"
+                                type="submit">Güncelle</button>
+                            <hr class="my-4">
+
+
+                            <button style="margin-bottom:12px" class="btn btn-lg btn-danger btn-block"><a
+                                    style="color:white;text-decoration: none;"
+                                    href="/personelSil?id=<%=sonuclar[0]["id"]%>">Personel Sil </a></button>
+
+
+
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
