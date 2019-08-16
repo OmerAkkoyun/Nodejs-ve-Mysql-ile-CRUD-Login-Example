@@ -35,6 +35,7 @@ Buraya daha uygun bir görsel ve açıklama yapabilirsiniz..
 💚Nodejs :https://nodejs.org/en/ 
 projede kullanılan version v10.16.0 LTS
 
+uygulama klasörü içindeyken 
 cmd <code> npm install</code><br>
 package.json içindeki **dependencies** leri node_modules klasörüne indirecektir. <br>
 
