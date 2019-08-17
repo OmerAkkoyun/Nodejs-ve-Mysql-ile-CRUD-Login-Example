@@ -82,7 +82,7 @@ Sorgularda hata almamak için ; <br>
 
 ### 3 
 ```
-<code> npm start </code>
+npm start
 ```
 
 
