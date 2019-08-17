@@ -1,4 +1,4 @@
-# Nodejs ve Mysql ile Crud,Login işlemleri
+# Nodejs ve Mysql ile Crud,Login işlemleri 
 Bu projede Login olma işlemleri ve **nodejs** kullanarak **mysql** veritabanına veri ekleme,veri güncelleme,veri listeleme ve veri silme gibi işlemleri yapıldı.
 Login olmadan verileri göremezsiniz,**express-session** sayesinde giriş yapılıp yapılmadığı kontrolünden sonra veri ekleme, silme ,güncelleme ve listeleme özelliklerine erişilebilir.
 
