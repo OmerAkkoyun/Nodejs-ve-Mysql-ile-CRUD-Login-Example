@@ -40,24 +40,24 @@ package.json içindeki **dependencies** leri node_modules klasörüne indirecekt
 
 package.json dependenciesler ;<br>
 ```
-"dependencies": {<br>
-    "body-parser": "^1.19.0",<br>
-    "connect-flash": "^0.1.1",<br>
-    "cookie-parser": "^1.4.4",<br>
-    "cookieparser": "^0.1.0",<br>
+"dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "cookieparser": "^0.1.0",
     "ejs": "^2.6.2",<br>
-    "express": "^4.17.1",<br>
-    "express-ejs-layouts": "^2.5.0",<br>
-    "express-flash": "0.0.2",<br>
-    "express-session": "^1.16.2",<br>
-    "mysql": "^2.17.1",<br>
-    "nodemon": "^1.19.1",<br>
-    "path": "^0.12.7",<br>
-    "popups": "^1.1.3",<br>
-    "session": "^0.1.0",<br>
-    "utf8": "^3.0.0"<br>
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-flash": "0.0.2",
+    "express-session": "^1.16.2",
+    "mysql": "^2.17.1",
+    "nodemon": "^1.19.1",
+    "path": "^0.12.7",
+    "popups": "^1.1.3",
+    "session": "^0.1.0",
+    "utf8": "^3.0.0"
   },
-  <br>
+ 
 ```
 <hr>
 
@@ -73,8 +73,9 @@ var VeriTabaniAyarlar = {<br>
     password: '',<br>
     database: 'dbpersonel',<br>
     port: '3306'<br>
-};<br>```
+};
 module.exports = {VeriTabaniAyarlar: VeriTabaniAyarlar}; <br><br>
+```
 ### 2 
 Sorgularda hata almamak için ; <br>
 **controller** > içindeki **personelController.js** dosyasının içindeki veritabanı tablo isimlerini, sizin myssql veritabanın tablo isimleri ile değiştirin.<br>
