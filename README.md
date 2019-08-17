@@ -39,6 +39,7 @@ cmd <code> npm install</code><br>
 package.json içindeki **dependencies** leri node_modules klasörüne indirecektir. <br>
 
 package.json dependenciesler ;<br>
+```
 "dependencies": {<br>
     "body-parser": "^1.19.0",<br>
     "connect-flash": "^0.1.1",<br>
@@ -57,7 +58,7 @@ package.json dependenciesler ;<br>
     "utf8": "^3.0.0"<br>
   },
   <br>
-
+```
 <hr>
 
 ## Test Etme
@@ -65,23 +66,23 @@ package.json dependenciesler ;<br>
 Public klasöründe bulunan '**dbConfig.js**' isimli dosyanın içine, sizin local mysql veritabanı özelliklerini girin.<br><br>
 Projede bulunan : <br>
 //Veritabanına Bağlantı Ayarlarım.<br>
-
+```
 var VeriTabaniAyarlar = {<br>
     host: '127.0.0.1',<br>
     user: 'root',<br>
     password: '',<br>
     database: 'dbpersonel',<br>
     port: '3306'<br>
-};<br>
+};<br>```
 module.exports = {VeriTabaniAyarlar: VeriTabaniAyarlar}; <br><br>
 ### 2 
 Sorgularda hata almamak için ; <br>
 **controller** > içindeki **personelController.js** dosyasının içindeki veritabanı tablo isimlerini, sizin myssql veritabanın tablo isimleri ile değiştirin.<br>
 
 ### 3 
-
+```
 <code> npm start </code>
-
+```
 
 
 <hr>
