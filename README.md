@@ -92,7 +92,7 @@ Sorgularda hata almamak için ; <br>
 ## Teşekkürler
 
 * Eksiklerim olabilir junior developer olarak kendimi geliştirmeye çalışıyorum ,<br> öğrendiklerim ile küçükte olsa projeler yapmaya çalşıyorum.
-* Kendinize iyi bakın :)
+* İyi Çalışmalar :)
 
 
 
